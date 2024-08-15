@@ -22,7 +22,7 @@ namespace DotnetDocument.Syntax
         {
             List<SyntaxTrivia> paramList =
                 indentationTrivia.HasValue
-                    ? [indentationTrivia.Value, SyntaxFactory.DocumentationCommentExterior("/// ")]
+                    ?[indentationTrivia.Value, SyntaxFactory.DocumentationCommentExterior("/// ")]
                     : [SyntaxFactory.DocumentationCommentExterior("/// ")];
 
             return SyntaxFactory
